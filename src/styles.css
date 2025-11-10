@@ -64,3 +64,57 @@ app-sidebar li:hover {
     background-color: #e3F2Fd;
     color: #1565c0;
 }
+
+/* mobile & tab responsive */
+@media (max-width: 768px) {
+    .app-section {
+        height: auto;
+    }
+
+    .main-section {
+        flex-direction: column;
+    }
+
+    app-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        box-shadow: none;
+    }
+
+    app-sidebar:hover {
+        width: 100%;
+    }
+
+    app-main {
+        padding: 16px;
+    }
+
+    app-header,
+    app-footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    app-sidebar li {
+        padding: 12px;
+        text-align: center;
+    }
+}
+
+/* mobile resposive */
+@media (max-width: 480px) {
+    app-sidebar li {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    app-main {
+        padding: 12px;
+    }
+
+    app-header,
+    app-footer {
+        font-size: 13px;
+    }
+}
