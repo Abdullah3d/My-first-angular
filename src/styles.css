@@ -66,7 +66,7 @@ app-sidebar li:hover {
 }
 
 /* mobile & tab responsive */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
     .app-section {
         height: auto;
     }
@@ -103,9 +103,20 @@ app-sidebar li:hover {
 }
 
 /* mobile resposive */
-@media (max-width: 480px) {
+ @media (max-width: 480px) {
+
+    app-sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        transform: none;
+    }
+
+    app-sidebar ul {
+        flex-direction: column;
+    }
     app-sidebar li {
-        font-size: 14px;
+        text-align: left;
         padding: 10px;
     }
 
@@ -116,5 +127,6 @@ app-sidebar li:hover {
     app-header,
     app-footer {
         font-size: 13px;
-    }
-}
+        padding: 10px;
+    } 
+} 
